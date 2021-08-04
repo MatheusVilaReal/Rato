@@ -1,22 +1,14 @@
 #include <stdio.h>
 
+float delta(float a, float b, float c){
+
+    return (b * b - 4 * a * c);
+}
+
 int main(){
 
-    int n = 0;
-
-    scanf(" %d", &n);
-
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < n; j++){
-
-            if(i == 0 || j == 0 || i == n - 1 || j == n - 1)
-                putchar('*');
-            else    
-                putchar(' ');
-        }
-
-        putchar('\n');
-    }
+    printf("%.1f\n", delta(1, 2, 3));
+    printf("%.1f\n", delta(2, 2, -1));   
 
     return 0;
 }

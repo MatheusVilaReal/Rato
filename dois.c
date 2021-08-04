@@ -1,22 +1,19 @@
 #include <stdio.h>
 
+int par_impar(int inteiro){
+
+    return inteiro % 2;
+}
+
+// int par_impar(int inteiro){
+
+//     return inteiro & 1;
+// }
+
 int main(){
 
-    int inteiro = 0, maior = 0, qtd = 0;
-
-    scanf(" %d", &inteiro);
-
-    while(inteiro >= 0){
-
-        if(inteiro > maior)
-            maior = inteiro;
-
-        ++qtd;
-
-        scanf(" %d", &inteiro);
-    }
-
-    printf("%d %d\n", maior, qtd);
+    printf("%d\n", par_impar(2));
+    printf("%d\n", par_impar(3));
 
     return 0;
 }
