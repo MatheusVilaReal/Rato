@@ -7,10 +7,10 @@ int main(){
     for(int i = 0; i < 5; i++)
         scanf(" %d", &inteiros[i]);
 
-    for(int i = 0; i < 4; i++)
+    for(int i = 4; i > 0; i--)
         printf("%d ", inteiros[i]);
 
-    printf("%d", inteiros[4]);
+    printf("%d", inteiros[0]);
 
     return 0;
 }
