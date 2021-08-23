@@ -4,7 +4,7 @@ int resfria_motor(float temperatura){
 
     if(temperatura < (float) 35)
         return 0;
-    else if(temperatura > 65)
+    else if(temperatura > (float) 65)
             return 2;
         else
             return 1;
