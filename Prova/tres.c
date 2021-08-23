@@ -11,6 +11,20 @@ float dias_bons(float temperaturas[], int n_dias){
     return (float) dias_bons / n_dias;
 }
 
+/*  OUTRA VERSÃO DA FUNÇÃO
+
+float dias_bons(float temperaturas[], int n_dias){
+
+    int dias_bons = 0;
+
+    for(int i = 0; i < n_dias; i++)
+        if(temperaturas[i] >= 15 && temperaturas[i] <= 25)
+            ++dias_bons;
+
+    return (float) dias_bons / n_dias;
+}
+*/
+
 /*
  *   O EXERCÍCIO PEDE SOMENTE A FUNÇÃO
  */
